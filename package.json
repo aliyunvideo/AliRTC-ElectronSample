@@ -1,0 +1,29 @@
+{
+  "name": "alirtc-electron-demo",
+  "version": "1.0.0",
+  "description": "AliRTC Electron Demo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack-win": "electron-builder --win --x64",
+    "pack-mac": "export NODE_ENV=production && electron-builder --mac"
+  },
+  "keywords": [
+    "AliRTC",
+    "Electron",
+    "demo"
+  ],
+  "build": {
+    "productName": "AliRTC Electron Demo",
+    "appId": "org.aliyun.alirtc",
+    "directories": {
+      "output": "build"
+    }
+  },
+  "author": "junqi.fjq",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.12",
+    "electron-builder": "^21.2.0"
+  }
+}
