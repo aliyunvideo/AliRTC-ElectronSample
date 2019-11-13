@@ -229,7 +229,7 @@
     var getRTCAuthInfo = () => {
         return new Promise(function (resolve, reject) {
             $.ajax({
-                url: "https://alirtc.ossrs.net/app/v1/login?room=" + channelId + "&user=" + userName + "&passwd=1234", //"https://alirtc.ossrs.net/app/v1/login?room="+channelId + "&user="+ userName + "&passwd=1234",
+                url: "https://127.0.0.1/app/v1/login?room=" + channelId + "&user=" + userName + "&passwd=1234",
                 type: 'POST',
                 contentType: 'application/json; charset=utf-8',
                 dataType: 'json',
